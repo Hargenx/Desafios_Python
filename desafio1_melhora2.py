@@ -11,7 +11,7 @@ class Aluno:
     notas: List[Union[int, float]]
 
     @property
-    def media(self):
+    def media(self) -> float:
         """
         Calcula e retorna a média das notas do aluno.
         """
@@ -23,7 +23,7 @@ class Aluno:
 
         return sum(self.notas) / len(self.notas)
 
-    def imprimir_media(self):
+    def imprimir_media(self) -> None:
         """
         Imprime o nome do aluno e sua média formatada.
         """
